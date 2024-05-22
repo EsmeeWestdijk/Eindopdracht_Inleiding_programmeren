@@ -1,0 +1,36 @@
+
+
+ body{
+    background-image: url(image/achtergrond_roze.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.opties{
+   justify-content: right;
+
+}
+
+p{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 12em;
+
+}
+
+.toppings, .glazuur{
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    margin: 4em;
+    padding: 1em; 
+}
+
+
+
+.taartafbeelding{
+    display: flex;
+    justify-content:center; 
+    max-width: 100%;
+}
+
