@@ -1,7 +1,5 @@
 console.log("hallo wereld")
 
-
-
 let glazuurBlauw = document.querySelector("#glazuurBlauw")
 let glazuurOranje = document.querySelector("#glazuurOranje")
 let glazuurPaars = document.querySelector("#glazuurPaars")
@@ -60,16 +58,16 @@ button.addEventListener("click", () => {
         glazuurPaars.classList.contains("show") ||
         chocoladeOverlay.classList.contains("show") ||
         sprinkelsOverlay.classList.contains("show") ||
-        kaarsjesOverlay.classList.contains("show") 
-    ){
-       elementH1.textContent = "Gefeliciteerd, je taart is klaar!"
-       confettiKlaar.classList.toggle("show")
-       audioElement.play();
+        kaarsjesOverlay.classList.contains("show")
+    ) {
+        elementH1.textContent = "Gefeliciteerd, je taart is klaar!"
+        confettiKlaar.classList.toggle("show")
+        audioElement.play();
 
-       setTimeout(() => {
-        audioElement.pause();
-        audioElement.currentTime = 0; // Terugspoelen naar het begin
-    }, 10000);
+        setTimeout(() => {
+            audioElement.pause();
+            audioElement.currentTime = 0; // Terugspoelen naar het begin
+        }, 10000);
 
     } else {
         elementH1.textContent = "Probeer nog wat toe te voegen aan de taart"
@@ -93,5 +91,5 @@ let audioElement = document.querySelector("#audio")
                     audioElement.pause();
                     audioElement.currentTime = 0; // Terugspoelen naar het begin
                 }, 30000);
-*/ 
+*/
 
