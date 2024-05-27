@@ -48,22 +48,12 @@ kaarsjesMenu.addEventListener("click", () => {
 
 let elementH1 = document.querySelector("h1")
 
-let button = document.querySelector("button")
-
-function veranderTitel() {
-    elementH1.textContent = "Gefeliciteerd, je taart is klaar!"
-}
-
-button.addEventListener("click", veranderTitel)
+let button = document.querySelector("#yeey")
 
 let confettiKlaar = document.querySelector("#confetti")
 
 
 button.addEventListener("click", () => {
-    confettiKlaar.classList.toggle("show")
-})
-
-/*button.addEventListener("click", () => {
     if (
         glazuurBlauw.classList.contains("show") ||
         glazuurOranje.classList.contains("show") ||
@@ -72,9 +62,36 @@ button.addEventListener("click", () => {
         sprinkelsOverlay.classList.contains("show") ||
         kaarsjesOverlay.classList.contains("show") 
     ){
-       veranderTitel
+       elementH1.textContent = "Gefeliciteerd, je taart is klaar!"
+       confettiKlaar.classList.toggle("show")
+       audioElement.play();
+
+       setTimeout(() => {
+        audioElement.pause();
+        audioElement.currentTime = 0; // Terugspoelen naar het begin
+    }, 10000);
+
     } else {
-        console.log("probeer nog wat toe te voegen"); 
+        elementH1.textContent = "Probeer nog wat toe te voegen aan de taart"
     }
-})*/
+})
+
+let audioElement = document.querySelector("#audio")
+
+
+/* bron audio: https://www.youtube.com/watch?v=uGsRDqPEPtI*/
+
+/* bron onderzoek audio: 
+   Chatgpt promt: hoe kan ik een audio toevoegen aan mijn javascript?
+   Antwoord: Je moet een <audio> element in je HTML-bestand toevoegen. Dit element bevat de audiobron die je wilt afspelen.
+   audioElement.play toevoegen in Javascript.*/
+
+/*bron onderzoek audio:
+  Chatgpt promt: hoe stop ik de audio na 30 sec + mijn code?
+  Antwoord: // Stop de audio na 30 seconden (30000 milliseconden)
+                setTimeout(() => {
+                    audioElement.pause();
+                    audioElement.currentTime = 0; // Terugspoelen naar het begin
+                }, 30000);
+*/ 
 
