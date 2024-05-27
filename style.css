@@ -1,36 +1,68 @@
-
-
- body{
+body {
     background-image: url(image/achtergrond_roze.jpeg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.opties{
-   justify-content: right;
-
-}
-
-p{
+h1 {
     display: flex;
-    justify-content: flex-end;
-    margin-right: 12em;
+    justify-content: center;
+}
+
+.button{
+    margin-left: 35em;
+    margin-top: 25em;
+  
 
 }
 
-.toppings, .glazuur{
+
+#imageMenuToppings,
+#imageMenuGlazuur {
     display: flex;
     justify-content: right;
     flex-direction: row;
     margin: 4em;
-    padding: 1em; 
+    padding: 1em;
+}
+
+.plaatjes {
+    display: flex;
+    position: absolute;
+}
+
+#imageMenuGlazuur {
+    position: absolute;
 }
 
 
-
-.taartafbeelding{
+#taartafbeelding {
     display: flex;
-    justify-content:center; 
+    justify-content: center;
     max-width: 100%;
+    position: absolute;
+    margin-left: 3em;
+    
+}
+
+#imageStack {
+    position: relative;
+}
+
+#imageStack img {
+    position: absolute;
+    margin-left: 3.3em; 
+    margin-top: 0.3em;
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+#imageStack #kaarsjesTop {
+    margin-left: 9.5em;
+    margin-bottom: 10em;
+    max-height: 25.5%;
 }
 
