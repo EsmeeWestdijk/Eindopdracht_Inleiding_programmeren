@@ -1,5 +1,5 @@
 body {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image: url(image/achtergrond_roze.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,10 +8,31 @@ body {
 h1 {
     display: flex;
     justify-content: center;
-    color: white; 
+    color: white;
 }
 
-#yeey {
+li button {
+    border-radius: 1em;
+    background-color: aliceblue;
+    border-color: deeppink;
+    border-width: 0.5em;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 2em;
+}
+
+header p {
+    display: flex;
+    margin-left: 2em;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#button {
     margin-left: 35em;
     margin-top: 25em;
     padding: 1em 2em;
@@ -99,18 +120,4 @@ h1 {
 #imageMenuToppings {
     display: flex;
 
-}
-
-li button{
-    border-radius: 1em;
-    background-color: aliceblue;
-    border-color: deeppink;
-    border-width: 0.5em;
-    
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    padding: 2em;
 }

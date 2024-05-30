@@ -43,15 +43,22 @@ kaarsjesMenu.addEventListener("click", () => {
 
 let elementH1 = document.querySelector("h1")
 
-let button = document.querySelector("#yeey")
+let button = document.querySelector("#button")
 
 let confettiKlaar = document.querySelector("#confetti")
 
-/* bron audio: https://www.youtube.com/watch?v=uGsRDqPEPtI*/
+/* bron audio: https://www.youtube.com/watch?v=uGsRDqPEPtI */
 let audioElement = document.querySelector("#audio")
 
 
-/*--Samen met Lieke--*/
+/* bron onderzoek audio: 
+   Chatgpt promt: hoe kan ik een audio toevoegen aan mijn javascript?*/
+
+/* bron onderzoek audio:
+  Chatgpt promt: hoe stop ik de audio na 30 sec + mijn code? */
+
+
+/*--Samen met Lieke geleerd--*/
 button.addEventListener("click", () => {
     if (
         glazuurBlauw.classList.contains("show") ||
@@ -78,25 +85,19 @@ button.addEventListener("click", () => {
     }
 })
 
-/* bron onderzoek audio: 
-   Chatgpt promt: hoe kan ik een audio toevoegen aan mijn javascript?*/
 
-/*bron onderzoek audio:
-  Chatgpt promt: hoe stop ik de audio na 30 sec + mijn code?*/
+/*--samen met Bente geleerd--*/
+const veranderBakkerij = document.querySelector("#bakkerijMenu")
+const veranderWoonkamer = document.querySelector("#woonkamerMenu")
+const veranderKeuken = document.querySelector("#keukenMenu")
 
-
-/*--samen met Bente--*/
-
-const veranderBakkerij = document.querySelector("#bakkerij")
-const veranderWoonkamer = document.querySelector("#woonkamer")
-const veranderKeuken = document.querySelector("#keuken")
-
-/*https://bakkerijmaris.be/*/
+/*https://www.foodinspiration.com/be/bakker-van-maanen-gaat-voedselverspilling-tegen-met-tweedekans-winkels/*/
 veranderBakkerij.addEventListener("click", () => {
     document.body.style.backgroundImage = "url(image/achtergrond_bakkerij.jpeg)"
+
 });
 
-/*https://www.woonenzo.nl/complete-woonkamers/complete-woonkamer-high-rock-met-barkast*/
+/*https://www.kotterliving.nl/ruimtes/woonkamer*/
 veranderWoonkamer.addEventListener("click", () => {
     document.body.style.backgroundImage = "url(image/achtergrond_woonkamer.jpeg)"
 });
@@ -104,5 +105,5 @@ veranderWoonkamer.addEventListener("click", () => {
 /*https://www.kitchen4all.nl/keuken-inspiratie/*/
 veranderKeuken.addEventListener("click", () => {
     document.body.style.backgroundImage = "url(image/achtergrond_keuken.jpeg)"
-}); 
+});
 
